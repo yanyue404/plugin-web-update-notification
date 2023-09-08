@@ -1,0 +1,52 @@
+{
+  "name": "@plugin-web-update-notification/nuxt",
+  "type": "module",
+  "version": "1.6.5",
+  "description": "Webpack plugin for detect web page updates and notify.",
+  "author": "Utopia",
+  "license": "MIT",
+  "homepage": "https://github.com/GreatAuk/plugin-web-update-notification",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreatAuk/plugin-web-update-notification",
+    "directory": "packages/nuxt-module"
+  },
+  "bugs": {
+    "url": "https://github.com/GreatAuk/plugin-web-update-notification/issues"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "@plugin-web-update-notification/nuxt",
+    "web-update-notification"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "@plugin-web-update-notification/core": "workspace:*",
+    "vue-server-renderer": "2.6.14"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0"
+  }
+}

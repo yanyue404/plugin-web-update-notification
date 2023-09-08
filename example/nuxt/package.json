@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-example",
+  "version": "1.0.0",
+  "description": "Nuxt starter for CodeSandBox",
+  "author": "Nuxt.js Team",
+  "private": true,
+  "scripts": {
+    "dev": "MINIMAL=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest",
+    "preview": "pnpm generate && vite preview --port=7711"
+  },
+  "dependencies": {
+    "nuxt": "2.15.0",
+    "vue": "2.6.14",
+    "vue-client-only": "2.1.0",
+    "vue-server-renderer": "2.6.14",
+    "@babel/preset-env": "7.12.17",
+    "vuex": "3.6.2",
+    "webpack": "4.46.0"
+  }
+}
